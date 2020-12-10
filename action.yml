@@ -1,0 +1,10 @@
+name: "Go mod outdated"
+description: "Find outdated dependencies"
+
+branding:
+  icon: "calendar"
+  color: "blue"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
