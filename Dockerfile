@@ -10,7 +10,7 @@ RUN go get github.com/psampaz/go-mod-outdated
 
 # Redirect to artifactory
 ARG ARTIFACTORY=artifactory.gcp.anz
-ENV GOPROXY="direct,${ARTIFACTORY:+https://${ARTIFACTORY}/artifactory/go}"
+ENV GOPROXY="${ARTIFACTORY:+https://${ARTIFACTORY}/artifactory/go},direct"
 ENV GO111MODULE=on
 
 # Run go mod outdated
