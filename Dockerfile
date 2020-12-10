@@ -9,4 +9,4 @@ LABEL "maintainer"="Scott Dawson <scott@anz.com>"
 RUN go get github.com/psampaz/go-mod-outdated
 
 # Run go mod outdated
-ENTRYPOINT ["go", "list", "-mod=readonly", "-u", "-m", "-json all", "|", "$(go env GOPATH)/bin/go-mod-outdated", "-update", "-direct", "-ci"]
+ENTRYPOINT ["go", "list", "-mod=readonly", "-u", "-m", "-json", "all", "|", "$(go env GOPATH)/bin/go-mod-outdated", "-update", "-direct", "-ci"]
