@@ -11,7 +11,7 @@ RUN go get github.com/psampaz/go-mod-outdated
 # Set go proxy
 ENV GONOSUMDB=*
 ENV GO111MODULE=on
-ENV GOPROXY=direct,https://artifactory.gcp.anz/artifactory/api/go/go
+ENV GOPROXY=https://platform-gomodproxy.services-platdev.x.gcpnp.anz,https://artifactory.gcp.anz/artifactory/api/go/go,direct
 ENV GOPRIVATE=github.com/anzx
 
 # Run go mod outdated
