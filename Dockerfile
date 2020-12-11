@@ -1,4 +1,4 @@
-FROM gcr.io/anz-x-fabric-np-641432/base-images/base-debian10:vf23e3b5
+FROM docker.pkg.github.com/anzx/fabric-images/base-debian10:vf23e3b5
 
 LABEL "version"="1.0.0"
 LABEL "repository"="https://github.com/sjdaws/go-mod-outdated-action"
