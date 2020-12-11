@@ -10,7 +10,7 @@ RUN go get github.com/psampaz/go-mod-outdated
 
 # Set go proxy
 ENV GO111MODULE=on
-ENV GOPROXY=https://proxy.golang.org,https://goproxy.io,direct
+ENV GOPROXY=https://artifactory.gcp.anz/artifactory/api/go/go,direct
 
 # Run go mod outdated
 ENTRYPOINT ["go", "list", "-mod=readonly", "-u", "-m", "-json", "all"]
