@@ -1,4 +1,4 @@
-FROM docker.pkg.github.com/anzx/fabric-images/base-debian10:vf23e3b5
+FROM docker.pkg.github.com/anzx/fabric-images/golang-1.15:1607662950
 
 LABEL "version"="1.0.0"
 LABEL "repository"="https://github.com/sjdaws/go-mod-outdated-action"
