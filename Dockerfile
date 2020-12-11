@@ -8,10 +8,9 @@ LABEL "maintainer"="Scott Dawson <scott@anz.com>"
 # Add go-mod-outdated
 RUN go get github.com/psampaz/go-mod-outdated
 
-# Redirect to artifactory
-ARG ARTIFACTORY=artifactory.gcp.anz
-ENV GOPROXY=${ARTIFACTORY:+https://${ARTIFACTORY}/artifactory/go}
+# Set go proxy
 ENV GO111MODULE=on
+ENV GOPROXY=https://proxy.golang.org,https://goproxy.io,direct
 
 # Run go mod outdated
 ENTRYPOINT ["go", "list", "-mod=readonly", "-u", "-m", "-json", "all"]
