@@ -1,4 +1,4 @@
-FROM docker.pkg.github.com/anzx/fabric-images/golang-1.15:1607666309
+FROM hub.artifactory.gcp.anz/golang:1.14.7-alpine3.12
 
 LABEL "version"="1.0.0"
 LABEL "repository"="https://github.com/sjdaws/go-mod-outdated-action"
