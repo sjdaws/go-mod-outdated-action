@@ -8,7 +8,7 @@ LABEL "maintainer"="Scott Dawson <scott@anz.com>"
 # Set go proxy
 ENV GONOSUMDB=*
 ENV GO111MODULE=on
-ENV GOPROXY=https://platform-gomodproxy.services-platdev.x.gcpnp.anz,https://artifactory.gcp.anz/artifactory/api/go/go,direct
+ENV GOPROXY=https://artifactory.gcp.anz/artifactory/api/go/go,direct
 #ENV GOPRIVATE=github.com/anzx
 
 # Add go-mod-outdated
